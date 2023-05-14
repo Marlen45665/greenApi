@@ -1,0 +1,14 @@
+.user{
+    padding: 12px ;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    height: 60px;
+    width: 100%;
+    /* background-color: rgb(164, 164, 164); */
+    border-bottom: 1px solid rgb(162, 161, 161);
+}
+.user:hover{
+    cursor: pointer;
+    background-color: rgba(175, 173, 173, 0.419)
+}

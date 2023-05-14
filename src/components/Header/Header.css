@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #075E54;
+  color: white;
+  height: 60px;
+  box-sizing: border-box;
+}
+.header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+  

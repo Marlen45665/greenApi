@@ -1,0 +1,8 @@
+.message-list {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: calc(100% - 120px);
+
+  
+}

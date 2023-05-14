@@ -1,0 +1,7 @@
+.user-list{
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: calc(100% - 60px);
+}
