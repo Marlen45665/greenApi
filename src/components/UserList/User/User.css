@@ -7,8 +7,22 @@
     width: 100%;
     /* background-color: rgb(164, 164, 164); */
     border-bottom: 1px solid rgb(162, 161, 161);
+    display: flex;
+    justify-content: space-between;
 }
 .user:hover{
     cursor: pointer;
     background-color: rgba(175, 173, 173, 0.419)
+}
+.no-newmessage{
+    height: 8px;
+    width: 8px;
+    border-radius: 50px;
+    background-color: rgb(47, 85, 255);
+}
+.newmessage{
+    height: 8px;
+    width: 8px;
+    border-radius: 50px;
+    background-color:  red;
 }

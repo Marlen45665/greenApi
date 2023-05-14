@@ -1,9 +1,11 @@
-import Home from "./components/Home.js";
+// import Home from "./components/Home.js";
+import Homi from "./components/homi.js";
 
 function App() {
   return (
     <>
-      <Home/>
+      <Homi/>
+      {/* <Home/> */}
     </>
   );
 }
