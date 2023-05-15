@@ -1,5 +1,5 @@
-const _IDINSTANCE = 1101820143;
-const _APITOCENINSTANCE = '19a1e285d7af4ea791384a47319af193177ec8466f0c479988';
+const _IDINSTANCE = "";
+const _APITOCENINSTANCE = '';
 
 const sendMessage = async ( message, chatId) => {
     const url = `https://api.green-api.com/waInstance${_IDINSTANCE}/SendMessage/${_APITOCENINSTANCE}`
