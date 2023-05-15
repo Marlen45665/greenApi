@@ -1,6 +1,5 @@
-const _INSTANCE = 1101820143;
-const _TOKEN = '19a1e285d7af4ea791384a47319af193177ec8466f0c479988';
-
+let _INSTANCE = 1101820143;
+let _TOKEN = '19a1e285d7af4ea791384a47319af193177ec8466f0c479988';
 
 const sendMessage = async ( message, chatId) => {
     const url = `https://api.green-api.com/waInstance${_INSTANCE}/SendMessage/${_TOKEN}`

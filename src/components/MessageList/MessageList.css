@@ -3,4 +3,5 @@
   flex-direction: column;
   overflow-y: scroll;
   height: calc(100% - 120px);
+  background-image: url("../assets/backWa.jpg");
 }
