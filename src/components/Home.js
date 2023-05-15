@@ -11,11 +11,13 @@ function Home() {
   const [chatName, setChatName] = useState("");
   const [messages, setMessages] = useState([]);
 
+
   useEffect(() => {
     const interval = setInterval(handleGetMessages, 5000);
-    console.log("обновлено")
+    console.log("Обновлено")
     return () => clearInterval(interval);
   });
+
 
   const handleAddUser = () => {
     const userAdd = prompt("Введите номер пользователя", "7-xxx-xxx-xx-xx@c.us");
@@ -25,6 +27,7 @@ function Home() {
       handleGetJurnal(userAdd);
     }
   };
+
 
   const handleGetJurnal = async (chatId) => {
     const response = await jurnals(chatId);
@@ -38,11 +41,13 @@ function Home() {
     setMessages(messagesData.reverse());
   };
 
+
   const dataTime = (date) => {
     const hours = date.getHours().toString().padStart(2, "0");
     const minutes = date.getMinutes().toString().padStart(2, "0");
     return `${hours}:${minutes}`;
   };
+
 
   const handleSendMessage = async (newMessage) => {
     const response = await sendMessage(newMessage.text, chatName);
@@ -51,6 +56,7 @@ function Home() {
     newMessage.time = time;
     setMessages((prevMessages) => [...prevMessages, newMessage]);
   };
+
 
   const handleGetMessages = async () => {
     const response = await getMessages();
@@ -80,9 +86,11 @@ function Home() {
     }
   };
 
+
   const deletes = async (id) => {
     await delMessages(id);
   };
+
 
   const handleUserClick = (userId) => {
     setUserList((prevUserList) =>
@@ -96,6 +104,7 @@ function Home() {
     handleGetJurnal(userId)
   };
 
+  
   return(
       <>
         <div className="home">
@@ -117,4 +126,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home;
