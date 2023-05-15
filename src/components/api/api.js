@@ -1,8 +1,8 @@
-let _INSTANCE = 1101820143;
-let _TOKEN = '19a1e285d7af4ea791384a47319af193177ec8466f0c479988';
+let _IDINSTANCE = 1101820143;
+let _APITOCENINSTANCE = '19a1e285d7af4ea791384a47319af193177ec8466f0c479988';
 
 const sendMessage = async ( message, chatId) => {
-    const url = `https://api.green-api.com/waInstance${_INSTANCE}/SendMessage/${_TOKEN}`
+    const url = `https://api.green-api.com/waInstance${_IDINSTANCE}/SendMessage/${_APITOCENINSTANCE}`
     const data = {
         chatId: chatId,
         message: message
@@ -26,7 +26,7 @@ const sendMessage = async ( message, chatId) => {
   
 
 const getMessages = async () => {
-const url = `https://api.green-api.com/waInstance${_INSTANCE}/ReceiveNotification/${_TOKEN}`;
+const url = `https://api.green-api.com/waInstance${_IDINSTANCE}/ReceiveNotification/${_APITOCENINSTANCE}`;
 const options = {
     method: 'GET',
     headers: {
@@ -45,7 +45,7 @@ try {
 
 
 const delMessages = async (idDel) => {
-const url = `https://api.green-api.com/waInstance${_INSTANCE}/DeleteNotification/${_TOKEN}/${idDel}`;
+const url = `https://api.green-api.com/waInstance${_IDINSTANCE}/DeleteNotification/${_APITOCENINSTANCE}/${idDel}`;
 const options = {
     method: 'DELETE',
     headers: {
@@ -64,7 +64,7 @@ try {
 
 
 const jurnals = async (chatId) => {
-    const url = `https://api.green-api.com/waInstance${_INSTANCE}/GetChatHistory/${_TOKEN}`
+    const url = `https://api.green-api.com/waInstance${_IDINSTANCE}/GetChatHistory/${_APITOCENINSTANCE}`
     const data = {
         chatId: chatId,
         count: 20
@@ -88,6 +88,3 @@ const jurnals = async (chatId) => {
 
 
 export { sendMessage, getMessages, delMessages, jurnals };
-
-
-//79035817446@c.us
